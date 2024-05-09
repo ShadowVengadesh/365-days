@@ -1,0 +1,27 @@
+Sure, here's a three-tier data warehouse architecture for a banking system:
+
+1. **Data Source Layer:**
+   - This layer consists of various data sources such as transactional databases, external data feeds, and legacy systems.
+   - Data sources include:
+     - Core banking system: Holds transactional data like customer accounts, transactions, balances, etc.
+     - ATM networks: Capture ATM transaction data.
+     - Online banking systems: Collect user activity data, account inquiries, and online transactions.
+     - Credit card processing systems: Store credit card transactions, statements, and customer details.
+     - External data feeds: Economic indicators, market data, regulatory data, etc.
+
+2. **Data Warehouse Layer:**
+   - This layer is responsible for storing and integrating data from different sources into a central repository, enabling analytical processing.
+   - Components include:
+     - Staging Area: Initial landing zone for raw data from various sources. Data cleansing and transformation occur here before loading into the data warehouse.
+     - Data Warehouse: Central repository for integrated and structured data. It stores historical data and supports complex queries and reporting.
+     - Data Marts: Subject-specific subsets of the data warehouse tailored for specific business units or departments (e.g., retail banking, corporate banking). They contain summarized and pre-aggregated data optimized for reporting and analysis.
+
+3. **Data Access Layer:**
+   - This layer provides tools and interfaces for end-users to access and analyze data stored in the data warehouse.
+   - Components include:
+     - Reporting Tools: Tools like Power BI, Tableau, or custom-built reporting applications enable users to generate standard and ad-hoc reports, dashboards, and visualizations.
+     - OLAP Cubes: Multidimensional data structures that allow for fast querying and analysis of data along multiple dimensions (e.g., time, geography, product).
+     - Data Mining and Analytics: Advanced analytics tools and algorithms for predictive modeling, customer segmentation, fraud detection, risk analysis, etc.
+     - Data Query Tools: SQL interfaces, APIs, or query languages for extracting data directly from the data warehouse for analysis or integration with other applications.
+
+This architecture provides a robust foundation for data management, integration, and analysis in the banking domain, supporting operational reporting, regulatory compliance, risk management, and strategic decision-making.
